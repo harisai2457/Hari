@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<body style="background-color:rgb(157, 212, 240)">
+
+        <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+
+             <label for="customername" class="col-sm-2 control-label">CustomerName</label>
+
+            <div class="col-sm-6">
+
+            <input type="text" class="form-control" id="customername"
+
+            placeholder="Enter customername">
+
+            </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+            <label for="mobilenumber" class="col-sm-2 control-label">Mobile</label>
+
+            <div class="col-sm-6">
+
+            <input type="text" class="form-control" id="mobilenumber"
+
+            placeholder="mobilenumber">
+
+            </div>
+
+            </div>
+
+            <div class="form-group">
+
+            <div class="col-sm-offset-2 col-sm-10">
+
+            <div class="checkbox">
+
+            <label>
+<input type="checkbox"> Remember me
+
+            </label>
+
+            </div>
+
+            </div>
+
+            </div>
+
+            <div class="form-group">
+
+            <div class="col-sm-offset-2 col-sm-10">
+
+           
+
+            <form>
+
+                <input type="button" onclick="getConfirmation()" value="Submit" /><br />
+                <br />
+                <input type="button" onclick="getConfirmation()" value="Sign in" />
+                
+                <input type="button" onclick="getConfirmation()" value="Sign up" />
+ 
+               
+
+               </form>
+
+            </div>
+
+            </div>
+
+           
+
+      
+
+           <script>         
+ function getConfirmation(){
+
+         var retVal = confirm("Your Comment is submitted!");
+
+          if( retVal == true ){
+           document.write ("Thank you !");
+                   return true;
+           }
+            else{
+
+         document.write (" Error in submitting!");
+            return false;
+           }
+
+         }
+            </script>
+
+    </body>
+
+</html>
+
+
